@@ -49,5 +49,5 @@ x, y = np.loadtxt("spring_dips_clipped_2.txt", dtype=float, skiprows=1, unpack=T
 data_x = x[2050:2300]
 data_y = y[2050:2300]
 data_size = len(data_x)
-initial, peak_data = find_peaks_boundaries(data_y, data_size, 0.2, 0.2)
+initial, peak_data = find_peaks_boundaries(data_y, data_size, 5, 0)
 print(peak_data)
